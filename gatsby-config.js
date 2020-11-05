@@ -5,6 +5,16 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins: ['gatsby-plugin-postcss'],
+	/* Your site config here */
+	plugins: [
+		'gatsby-plugin-postcss',
+		{
+			resolve: "gatsby-source-filesystem",
+			options: {
+				path: `${__dirname}/src/content/posts`,
+				name: 'posts'
+			}
+		},
+		"gatsby-transformer-remark"
+	]
 }
