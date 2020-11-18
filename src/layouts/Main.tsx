@@ -8,11 +8,13 @@ export default function MainLayout({ children }) {
 
     return (
         <main className="min-h-screen flex flex-col">
-            <Nav
-                navItems={navConfig}
-            />
+            <nav>
+                <Nav
+                    navItems={navConfig}
+                />
+            </nav>
 
-            <section className="flex-1 px-6">
+            <section className="container mx-auto flex-1 px-6">
                 {children}
             </section>
 

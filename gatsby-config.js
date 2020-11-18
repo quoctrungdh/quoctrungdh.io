@@ -16,5 +16,13 @@ module.exports = {
 			}
 		},
 		"gatsby-transformer-remark"
+		// {
+		// 	resolve: "gatsby-transformer-remark",
+		// 	options: {
+		// 		plugins: [
+		// 			"gatsby-remark-images"
+		// 		]
+		// 	}
+		// }
 	]
 }

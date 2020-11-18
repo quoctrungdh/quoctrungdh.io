@@ -29,7 +29,7 @@ export const navConfig: NavItem[] = [
 
 export default function Nav(props: NavProps) {
     return (
-        <ul className="flex justify-end py-4">
+        <ul className="container mx-auto flex justify-end py-4">
             {props.navItems.map((item) => (
                 <li className="mr-4" key={item.id}>
                     <Link
